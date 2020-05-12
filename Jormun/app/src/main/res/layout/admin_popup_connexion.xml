@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relayTemp1"
+        android:layout_width="313dp"
+        android:layout_height="683dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/lnlayTemp2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.setheightwidthpercentage_android_examples.com.MainActivity"
+            android:weightSum="100"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lnlayTemp3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:orientation="vertical"
+                android:background="#fde200">
+
+                <TextView
+                    android:id="@+id/txtvwTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txtvwGame_Title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlayTemp4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="75"
+                android:background="#0042fd"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edttxtConUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:ems="10"
+                    android:hint="@string/hntUsername"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edttxtConPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:hint="@string/hntPassword"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlayTemp5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="#00fd77"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnConConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bntConnect" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
