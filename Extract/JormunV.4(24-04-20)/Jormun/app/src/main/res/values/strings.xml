@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Jormun</string>
+    <string name="title_activity_maps">Map of Jormun</string>
+    <string name="txtvwGame_Title">The World of Jormun</string>
+    <string name="bntConnect">Connect</string>
+    <string name="btnLaunch">Launch</string>
+    <string name="btnConfirm">Confirm</string>
+    <string name="btnSubscribe">Subscribe</string>
+    <string name="txtvwStory">Story…</string>
+    <string name="hntPassword">Write password</string>
+    <string name="hntUsername">Write username</string>
+    <string name="hntMail">Write a correct email</string>
+    <string name="hntTelephone">Write a proper telephone number with code</string>
+    <string name="btnLeave">Leave</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnDemo">Demo</string>
+    <string name="btnChange">Change</string>
+</resources>
