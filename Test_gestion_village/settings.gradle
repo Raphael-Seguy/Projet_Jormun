@@ -1,0 +1,2 @@
+rootProject.name='Test_gestion_village'
+include ':app'

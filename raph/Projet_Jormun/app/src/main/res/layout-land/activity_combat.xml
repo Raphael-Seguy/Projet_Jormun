@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="	#4f4842">
+
+    <Button
+        android:id="@+id/btn_def"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="defendre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fuite" />
+
+    <Button
+        android:id="@+id/btn_atk"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="attaquer"
+        app:layout_constraintBottom_toTopOf="@+id/btn_def"
+        app:layout_constraintEnd_toStartOf="@+id/btn_sorts" />
+
+    <Button
+        android:id="@+id/btn_spel0"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="SPEL0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_spel2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_spel1"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_sorts"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Sorts"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fuite"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_spel1"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="SPEL1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_spel3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_fuite"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Fuite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_spel3"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="SPEL3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_spel2"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="SPEL2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_spel3"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/SpriteMb"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Text_cmb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Text_cmb"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/SpriteHr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SpriteMb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ProgressBar
+        android:id="@+id/PvHero"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="287dp"
+        android:layout_height="15dp"
+        android:progressDrawable="@drawable/style_pv"
+        app:layout_constraintBottom_toTopOf="@+id/btn_atk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SpriteHr"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/PvMob"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="280dp"
+        android:layout_height="15dp"
+        android:progressDrawable="@drawable/style_pv"
+        app:layout_constraintBottom_toTopOf="@+id/SpriteMb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_def_par"
+        android:layout_width="189dp"
+        android:layout_height="99dp"
+        android:background="@drawable/radius_btn"
+        android:text="parer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textarmuremag"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_def_esq"
+        android:layout_width="189dp"
+        android:layout_height="99dp"
+        android:background="@drawable/radius_btn"
+        android:text="esquive"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_def_par"
+        app:layout_constraintEnd_toStartOf="@+id/btn_def_par"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_def_par"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_retour"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:background="@drawable/radius_btn"
+        android:text="retour"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_def"
+        app:layout_constraintEnd_toEndOf="@+id/PvHero"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textarmuremag_valeur"
+        app:layout_constraintTop_toTopOf="@+id/textesquive" />
+
+    <Button
+        android:id="@+id/btn_inv"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:background="@drawable/radius_btn"
+        android:text="Inv "
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_def"
+        app:layout_constraintTop_toTopOf="@+id/btn_def" />
+
+    <TextView
+        android:id="@+id/Text_cmb"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="#dbdfdf"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/textarmure"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Arm"
+        android:textColor="#dbdfdf"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/PvHero"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toEndOf="@+id/textdegats"
+        app:layout_constraintTop_toTopOf="@+id/textdegats" />
+
+    <TextView
+        android:id="@+id/textarmure_valeur"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="22"
+        android:textColor="#dbdfdf"
+        app:layout_constraintEnd_toEndOf="@+id/textarmure"
+        app:layout_constraintTop_toBottomOf="@+id/textarmure" />
+
+    <TextView
+        android:id="@+id/textarmuremag"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Arm mag"
+        android:textColor="#dbdfdf"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textarmure_valeur"
+        app:layout_constraintTop_toBottomOf="@+id/textarmure_valeur" />
+
+    <TextView
+        android:id="@+id/textarmuremag_valeur"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="22"
+        android:textColor="#dbdfdf"
+        app:layout_constraintEnd_toEndOf="@+id/textarmuremag"
+        app:layout_constraintTop_toBottomOf="@+id/textarmuremag" />
+
+    <TextView
+        android:id="@+id/textdegats"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Dg"
+        android:textColor="#dbdfdf"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textdegats_valeur"
+        app:layout_constraintEnd_toEndOf="@+id/PvHero"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textdegats_valeur"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="22"
+        android:textColor="#dbdfdf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textdegats"
+        app:layout_constraintTop_toBottomOf="@+id/SpriteHr"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/textdegatmag"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Dg mag"
+        android:textColor="#dbdfdf"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textdegatmag_valeur"
+        app:layout_constraintEnd_toEndOf="@+id/textdegats_valeur" />
+
+    <TextView
+        android:id="@+id/textdegatmag_valeur"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="22"
+        android:textColor="#dbdfdf"
+        app:layout_constraintBottom_toTopOf="@+id/textesquive"
+        app:layout_constraintEnd_toEndOf="@+id/textdegatmag" />
+
+    <TextView
+        android:id="@+id/textesquive"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="Esq"
+        android:textColor="#dbdfdf"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textesquive_valeur"
+        app:layout_constraintEnd_toEndOf="@+id/textdegatmag_valeur" />
+
+    <TextView
+        android:id="@+id/textesquive_valeur"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:text="22"
+        android:textColor="#dbdfdf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textesquive"
+        app:layout_constraintTop_toBottomOf="@+id/textdegats_valeur"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/textEnd"
+        android:layout_width="282dp"
+        android:layout_height="503dp"
+        android:text="Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Text_return_map"
+        android:layout_width="219dp"
+        android:layout_height="62dp"
+        android:text="Retour à la carte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEnd"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet0"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_objet2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet1"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_objet3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet2"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet3"
+        android:layout_width="206dp"
+        android:layout_height="96dp"
+        android:background="@drawable/radius_btn"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fuite"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

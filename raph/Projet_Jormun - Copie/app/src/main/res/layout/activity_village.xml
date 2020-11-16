@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4f4842"
+    tools:context=".ActivityBase">
+
+    <TextView
+        android:id="@+id/text_nom_vill"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Ronquieres"
+        android:textColor="#DBDFDF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lvl_vil"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/text_nom_vill"
+        app:layout_constraintStart_toStartOf="@+id/text_nom_vill"
+        app:layout_constraintTop_toBottomOf="@+id/text_nom_vill"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bat0_vil"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bat2_vil"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bat2_vil"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bat1_vil"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/btn_bat0_vil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_bat2_vil"
+        app:layout_constraintTop_toTopOf="@+id/btn_bat0_vil"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_bat3_vil"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/btn_bat2_vil"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bat2_vil"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_quit_vil"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text=""
+        android:background="@drawable/retour_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bat2_vil"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <Button
+        android:id="@+id/btn_bat4_vil"
+        android:layout_width="110dp"
+        android:layout_height="130dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_bat2_vil"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bat2_vil"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_prec_vil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/arrow_left_logo"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/btn_quit_vil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_quit_vil"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_suiv_vil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/arrow_right_logo"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_quit_vil"
+        app:layout_constraintTop_toTopOf="@+id/btn_quit_vil"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_up_vil"
+        android:layout_width="111dp"
+        android:layout_height="40dp"
+        android:text="upgrade"
+        android:background="@drawable/radius_up"
+        app:layout_constraintStart_toEndOf="@+id/text_lvl_vil"
+        app:layout_constraintTop_toBottomOf="@+id/text_nom_vill"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_bat_prec"
+        android:layout_width="130dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_nom_bat_prec"
+        android:layout_width="331dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Sprite_bat_prec"
+        app:layout_constraintStart_toStartOf="@+id/Sprite_bat_prec"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_prod_bat_prec"
+        android:layout_width="201dp"
+        android:layout_height="152dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Sprite_bat_prec"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_bat_prec"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_up_bat_prec"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quit_vil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_bat_prec"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_up_nec_bat_prec"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quit_vil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_up_bat_prec"
+        app:layout_constraintVertical_bias="0.133"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="75dp"
+        android:layout_height="58dp"
+        android:background="@drawable/quit_logo_inv_precpng"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/btn_quit_vil"
+        app:layout_constraintTop_toBottomOf="@+id/text_up_nec_bat_prec"
+        app:layout_constraintVertical_bias="0.395"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scorl_creat_liste"
+        android:layout_width="352dp"
+        android:layout_height="440dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_quit_vil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_retour_creat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/quit_logo_inv_precpng"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/btn_quit_vil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/btn_quit_vil"
+        app:layout_constraintTop_toBottomOf="@+id/Scorl_creat_liste"
+        app:layout_constraintVertical_bias="0.654"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_Bat_crea_end"
+        android:layout_width="145dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Nom_bat_creat_end"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Sprite_Bat_crea_end"
+        app:layout_constraintStart_toStartOf="@+id/Sprite_Bat_crea_end"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_crea_end_prod"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Sprite_Bat_crea_end"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_Bat_crea_end"
+        app:layout_constraintTop_toBottomOf="@+id/Pord_titre_crea_end"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Btn_Yes_crea_end"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/Sprite_Bat_crea_end"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_Bat_crea_end"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_back_crea_end"
+        android:layout_width="92dp"
+        android:layout_height="62dp"
+        android:background="@drawable/quit_logo_inv_precpng"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/Scroll_crea_end_prod"
+        app:layout_constraintTop_toBottomOf="@+id/Scroll_crea_end_prod"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Pord_titre_crea_end"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:gravity="left"
+        android:textColor="#DBDFDF"
+        android:text="Production"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_Bat_crea_end"
+        app:layout_constraintTop_toBottomOf="@+id/Nom_bat_creat_end"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_titre_prod_up"
+        android:layout_width="201dp"
+        android:layout_height="35dp"
+        android:paddingTop="5dp"
+        android:text="Production"
+        android:textColor="#DBDFDF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Scroll_prod_bat_prec"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_bat_prec"
+        tools:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

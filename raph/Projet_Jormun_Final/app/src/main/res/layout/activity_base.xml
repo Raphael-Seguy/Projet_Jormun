@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4f4842"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero5"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintEnd_toEndOf="@+id/Sprite_inv_prec"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintEnd_toEndOf="@+id/Sprite_inv_prec"
+        app:layout_constraintTop_toTopOf="@+id/btn_inv_prec_hero1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_quete_nom_rec"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:gravity="left"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Scroll_stats_quete_rec"
+        app:layout_constraintStart_toStartOf="@+id/Scroll_stats_quete_rec"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_invprec_desc"
+        android:layout_width="258dp"
+        android:layout_height="190dp"
+        android:text="TextView"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/Sprite_inv_prec"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_inv_prec"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_player"
+        android:layout_width="151dp"
+        android:layout_height="174dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@drawable/joueur_logo"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Open_liste_hero"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/equip_logo"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/Open_liste_quetes"
+        app:layout_constraintEnd_toStartOf="@+id/Sprite_player"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Open_liste_vil"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/vil_logo"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_player"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Open_liste_quetes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/quest_logo"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Text_nom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_player"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Open_liste_inv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/inventaire"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/Text_nom"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_player"
+        app:layout_constraintVertical_bias="0.028"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_Quit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/retour_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_nom"
+        app:layout_constraintVertical_bias="0.702"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Open_liste_lieux"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/lieux_logo"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/Sprite_player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Text_nom"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="RAPHAEL"
+        android:textColor="#DBDFDF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_player"
+        app:layout_constraintVertical_bias="0.086"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/retour_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_hero0"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_hero1"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hero0"
+        app:layout_constraintVertical_bias="0.141"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_hero2"
+        android:layout_width="94dp"
+        android:layout_height="100dp"
+        android:text="Vide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hero1"
+        app:layout_constraintVertical_bias="0.221"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextNom0"
+        android:layout_width="94dp"
+        android:layout_height="23dp"
+        android:gravity="center"
+        android:textColor="#DBDFDF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hero0"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hero0"
+        app:layout_constraintStart_toStartOf="@+id/btn_hero0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextNom1"
+        android:layout_width="94dp"
+        android:layout_height="23dp"
+        android:textColor="#DBDFDF"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hero1"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hero1"
+        app:layout_constraintStart_toStartOf="@+id/btn_hero1"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextNom2"
+        android:layout_width="94dp"
+        android:layout_height="23dp"
+        android:textColor="#DBDFDF"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hero2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hero2"
+        app:layout_constraintStart_toStartOf="@+id/btn_hero2"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextClasse0"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/TextDescr0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935"
+        android:textSize="16sp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextClasse2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/TextDescr2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        android:textSize="16sp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextClasse1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/TextDescr1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963"
+        android:textSize="16sp"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextDescr0"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textColor="#DBDFDF"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_hero0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextDescr1"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_hero1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextDescr2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_hero2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/btn_hero2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_nextHero"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:text=""
+        android:background="@drawable/arrow_right_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_back"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_precHero"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:text=""
+        android:background="@drawable/arrow_left_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_back"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu0"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu0_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu0"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu0_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu0"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu1"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:textColor="#DBDFDF"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu0"
+        app:layout_constraintVertical_bias="0.124"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu1_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu1"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu1_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="  "
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu1"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu1"
+        app:layout_constraintVertical_bias="0.05"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu2_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu2"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu2_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu2"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="62dp"
+        android:text="vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu3_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu3"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu3_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu3"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu4"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu4_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu4"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu4_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu4"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu4"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu5"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:textColor="#DBDFDF"
+        android:text="Vide "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_lieu1"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu5_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu5"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu5_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu5"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu5"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu6"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="vide"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_lieu2"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu6_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu6"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu6_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu6"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_lieu7"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="vide"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_lieu3"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu7_coord"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintStart_toStartOf="@+id/btn_lieu7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu7"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_lieu7_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lieu7"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lieu7"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_vil0_sprite"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:text="Vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil0_nom"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vil0_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil0_sprite"
+        android:textSize="19sp"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_vil1_sprite"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:text="vide "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vil0_sprite"
+        app:layout_constraintVertical_bias="0.385"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil1_nom"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vil1_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil1_sprite"
+        android:textSize="19sp"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_vil2_sprite"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:text="vide "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_vil0_sprite"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil2_nom"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vil2_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil2_sprite"
+        android:textSize="19sp"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_vil3_sprite"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:text="vide "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_vil1_sprite"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil3_nom"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vil3_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil3_sprite"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil0_coord"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vil0_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil0_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vil0_sprite"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil2_coord"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vil2_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil2_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vil2_sprite"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil1_coord"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textColor="#DBDFDF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vil1_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil1_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vil1_sprite"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_vil3_coord"
+        android:layout_width="150dp"
+        android:textColor="#DBDFDF"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vil3_sprite"
+        app:layout_constraintStart_toStartOf="@+id/btn_vil3_sprite"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vil3_sprite"
+        android:gravity="center"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_inv_heroactu"
+        android:layout_width="102dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_inv_nomheroactu"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Bobi"
+        android:textColor="#DBDFDF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Sprite_inv_heroactu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_inv_heroactu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_inv_actu"
+        android:layout_width="292dp"
+        android:layout_height="367dp"
+        android:background="@drawable/radius_scroll_inv"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_inv_heroactu"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/arrow_left_logo"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toStartOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_suiv"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/arrow_right_logo"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_back"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_inv_prec"
+        android:layout_width="112dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_invprec_nom"
+        android:layout_width="112dp"
+        android:layout_height="25dp"
+        android:textColor="#DBDFDF"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Sprite_inv_prec"
+        app:layout_constraintStart_toStartOf="@+id/Sprite_inv_prec"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/Spritehero_inv_prec"
+        android:layout_width="146dp"
+        android:layout_height="150dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/text_invprec_desc"
+        app:layout_constraintEnd_toStartOf="@+id/Sprite_inv_prec"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_invprec_desc"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_invprec_quit"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:background="@drawable/quit_logo_inv_prec"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/text_invprec_desc"
+        app:layout_constraintTop_toBottomOf="@+id/text_invprec_desc"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_quete_titre"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textColor="#DBDFDF"
+        android:gravity="center"
+        android:text="Quêtes"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_quete"
+        android:layout_width="349dp"
+        android:layout_height="371dp"
+        android:background="@drawable/radius_scroll_quest"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quete_titre"
+        app:layout_constraintVertical_bias="0.492"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_quete_recomp"
+        android:layout_width="110dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_quete_desc_rec"
+        android:layout_width="270dp"
+        android:layout_height="193dp"
+        android:text="TextView"
+        android:textColor="#DBDFDF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/Sprite_quete_recomp"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_quete_recomp"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_stats_quete_rec"
+        android:layout_width="160dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_quete_desc_rec"
+        app:layout_constraintStart_toEndOf="@+id/Sprite_quete_recomp"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back_quete_rec"
+        android:layout_width="80dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/retour_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_quete_desc_rec"
+        app:layout_constraintVertical_bias="0.385"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero0"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintStart_toStartOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintTop_toTopOf="@+id/btn_inv_prec_hero1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inv_prec_hero0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_inv_prec_hero4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hero_inv_prec_not"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/Spritehero_inv_prec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inv_prec_hero1"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_recomp_titre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="Récompense "
+        android:textColor="#DBDFDF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Sprite_quete_recomp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/open_Ress"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:background="@drawable/logo_ress"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/Open_liste_inv"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/Open_liste_inv"
+        app:layout_constraintTop_toBottomOf="@+id/Open_liste_inv"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titre_ress"
+        android:layout_width="271dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Ressource"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Scroll_liste_ress"
+        android:layout_width="349dp"
+        android:layout_height="371dp"
+        android:background="@drawable/radius_scroll_inv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre_ress"
+        app:layout_constraintVertical_bias="0.303"
+        tools:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A39696"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_objet0"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:paddingTop="65dp"
+        android:text="item0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_objet2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_skill"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingTop="65dp"
+        android:text="item3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_inv"
+        app:layout_constraintVertical_bias="0.034"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet1"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:paddingTop="65dp"
+        android:text="item1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_objet3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_inv"
+        app:layout_constraintVertical_bias="0.622"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_objet2"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="144dp"
+        android:paddingTop="65dp"
+        android:text="item2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_skill"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_armegch"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="55dp"
+        android:text="armegch"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/btn_equip_torse"
+        app:layout_constraintTop_toTopOf="@+id/btn_equip_torse"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_armedr"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="55dp"
+        android:text="armedr"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/btn_equip_torse"
+        app:layout_constraintTop_toTopOf="@+id/btn_equip_torse"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_accdr"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="55dp"
+        android:text="accessoiredr"
+        app:layout_constraintStart_toEndOf="@+id/btn_equip_jambe"
+        app:layout_constraintTop_toTopOf="@+id/btn_equip_jambe"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_torse"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:paddingTop="55dp"
+        android:text="Torse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_equip_tete"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_jambe"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:paddingTop="55dp"
+        android:text="Jambes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_equip_torse"
+        app:layout_constraintVertical_bias="0.11"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_accgch"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="55dp"
+        android:text="accessoiregch"
+        app:layout_constraintEnd_toStartOf="@+id/btn_equip_jambe"
+        app:layout_constraintTop_toTopOf="@+id/btn_equip_jambe"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_equip_tete"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:paddingTop="55dp"
+        android:text="tete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_stuff"
+        app:layout_constraintVertical_bias="0.025"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/Sprite_hero"
+        android:layout_width="190dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Valeur_armuremag"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valeur_armure"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Valeur_degat"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valeur_armuremag"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Valeur_degatmag"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valeur_degat"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Valeur_esquive"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="30%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Valeur_degatmag"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="101dp"
+        android:layout_height="93dp"
+        android:background="@drawable/retour_btn"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TextPv"
+        app:layout_constraintTop_toBottomOf="@+id/Valeur_esquive"
+        app:layout_constraintVertical_bias="0.045"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Valeur_armure"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Sprite_hero"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_open_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/radius_open"
+        android:text="Skills"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_open_stuff"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_open_stuff"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_open_stuff"
+        android:layout_width="97dp"
+        android:layout_height="47dp"
+        android:background="@drawable/radius_open"
+        android:text="Equipement"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextPv"
+        app:layout_constraintVertical_bias="0.024"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_open_inv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/radius_open"
+        android:text="objets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toEndOf="@+id/btn_open_stuff"
+        app:layout_constraintTop_toTopOf="@+id/btn_open_stuff"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Text_classes"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:text="Classe/Classe"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameText"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_Spel0"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:text="Sort0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Spel2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_skill"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_Spel1"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Sort1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Spel3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_inv"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_Spel2"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="144dp"
+        android:text="Sort2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_skill"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_Spel3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Sort3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_open_inv"
+        app:layout_constraintVertical_bias="0.043"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/armure_icon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="armure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Valeur_armure"
+        app:layout_constraintTop_toTopOf="@+id/Sprite_hero"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/armuremag_icon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="arm mag"
+        app:layout_constraintEnd_toStartOf="@+id/Valeur_armuremag"
+        app:layout_constraintTop_toBottomOf="@+id/armure_icon"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/degat_icon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="degat"
+        app:layout_constraintEnd_toStartOf="@+id/Valeur_degat"
+        app:layout_constraintTop_toBottomOf="@+id/armuremag_icon"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/esquive_icon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="esquive"
+        app:layout_constraintEnd_toStartOf="@+id/Valeur_esquive"
+        app:layout_constraintTop_toBottomOf="@+id/degatmag_icon"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/degatmag_icon"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="dgt mag"
+        app:layout_constraintEnd_toStartOf="@+id/Valeur_degatmag"
+        app:layout_constraintTop_toBottomOf="@+id/degat_icon"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_quit_scroll"
+        android:layout_width="101dp"
+        android:layout_height="57dp"
+        android:text=""
+        android:background="@drawable/quit_logo_inv_precpng"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/Liste_spel"
+        android:layout_width="343dp"
+        android:layout_height="553dp"
+        android:background="@drawable/scoll_skils"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Sprite_hero"
+        app:layout_constraintVertical_bias="0.423"
+        tools:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/Liste_objet"
+        android:layout_width="343dp"
+        android:layout_height="553dp"
+        android:background="@drawable/scoll_objet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Sprite_hero"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/TextPv"
+        android:layout_width="79dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/pv"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="244Pv"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toEndOf="@+id/Text_classes"
+        app:layout_constraintTop_toBottomOf="@+id/NameText"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/NameText"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="BOBI"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Sprite_hero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sprite_hero"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titre_liste_skils"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="Skills"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Liste_spel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titre_liste_equip"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="6dp"
+        android:text="Equipement"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Liste_objet"
+        app:layout_constraintEnd_toEndOf="@+id/Liste_objet"
+        app:layout_constraintStart_toStartOf="@+id/Liste_objet"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titre_liste_objets"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="6dp"
+        android:text="Utilisables"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Liste_objet"
+        app:layout_constraintEnd_toEndOf="@+id/Liste_objet"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/Liste_objet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

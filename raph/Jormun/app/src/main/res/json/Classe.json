@@ -1,0 +1,101 @@
+{
+	"apprenti":
+	{
+		"sprite":".\\res\\sprite\\entity\\Apprenti.png",
+
+		"modif_HP": 0.9,
+		"modif_atk": 0.8,
+		"modif_def": 0.9,
+
+		"aptitude":
+		[
+			"etincelle_I",
+			"flammeche_I"
+		],
+
+		"competence":
+		[
+			{
+				"nom": "bonus_passif_magie_+",
+				"percent": 5
+			}
+		]
+	},
+	"magicien":
+	{
+		"sprite":".\\res\\sprite\\entity\\Mage.png",
+
+		"modif_HP": 0.9,
+		"modif_atk": 0.8,
+		"modif_def": 0.9,
+
+		"aptitude":
+		[
+			"etincelle_I",
+			"etincelle_II",
+			"flammeche_I",
+			"flammeche_II",
+			"picgelee_I"
+		],
+		"competence":
+		[
+			{
+				"nom": "bonus_passif_magie_+",
+				"percent": 7
+			}
+		]
+	},
+	"sorcier":{
+		"sprite":".\\res\\sprite\\entity\\Mage.png",
+
+		"modif_HP": 0.7,
+		"modif_atk": 0.7,
+		"modif_def": 0.8,
+
+		"aptitude":
+		[
+			"etincelle_I",
+			"etincelle_II",
+			"etincelle_III",
+			"flammeche_I",
+			"flammeche_II",
+			"flammeche_III",
+			"picgelee_I",
+			"picgelee_II",
+			"boostmana_I",
+			"tourenfeu_I"
+		],
+		"competence":
+		[
+			{
+				"nom": "bonus_passif_magie_+",
+				"percent": 10
+			}
+		]
+	},
+	"archimage":{
+		"sprite": ".\\main\\res\\sprite\\entity\\Archimage.png",
+
+		"modif_HP": 0.7,
+		"modif_atk": 0.7,
+		"modif_def": 0.8,
+
+		"aptitude":
+		[
+			"etincelle_I",
+			"etincelle_II",
+			"etincelle_III",
+			"etincelle_IV",
+			"flammeche_I",
+			"flammeche_II",
+			"flammeche_III",
+			"flammeche_VII",
+			"picgelee_I",
+			"picgelee_II",
+			"picgelee_VI",
+			"boostmana_I",
+			"tourenfeu_I",
+			"tourenfeu_II",
+		]
+	}
+}

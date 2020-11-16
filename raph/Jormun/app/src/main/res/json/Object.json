@@ -1,0 +1,11 @@
+{
+	"wood_sword":{
+		"sprite":"path/to/sprite",
+		"prix":100,
+		"utilisable":false,
+		"bonus_atk_physique_+":12,
+		"bonus_atk_physique_x":1.4,
+		"bonus_atk_magique_+":45,
+		"bonus_atk_magique_*":1.2,
+	}
+}

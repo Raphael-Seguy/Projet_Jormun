@@ -1,0 +1,13 @@
+{
+	"Goblin_1":{
+		"position":{
+			"lat":34,
+			"long":23
+		},
+		"race":"goblin",
+		"taille":20,
+		"equipement":[
+			"epe_bois","plastron_chaine","casque_cuir"
+		],
+	}
+}
